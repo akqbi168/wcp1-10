@@ -19,10 +19,10 @@ header {
 	width: 100%;
 	height: 70px;
 }
-.navigation {
+.header-container {
 	width: 1024px;
-	height: 70px;
 	margin: 0 auto;
+	position: relative;
 }
 .header-image {
 	background-image: url(img/logo.png);
@@ -32,7 +32,6 @@ header {
 	width: 160px;
 	float: left;
 }
-
 .header-list {
 	list-style: none;
 	line-height: 70px;
@@ -72,6 +71,7 @@ header {
 .portfolio {
 	text-align: center;
 	background-color: #ECEFF1;
+	width: 100%;
 }
 .portfolio-container {
 	width: 920px;
@@ -91,17 +91,15 @@ header {
 .portfolio-text, .feature-text, .profile-text, .contact-text {
 	font-size: 16px;
 	color: #000000;
-	margin: 30px 0;
+	margin: 30px auto;
 }
 .portfolio-box {
 	float: left;
 	width: 300px;
 	height: 250px;
-	padding: 0 10px;
 	background-size: cover;
 	background-position: center;
-	margin-right: 10px;
-	margin-bottom: 10px;
+	margin: 0 10px 10px 0;
 }
 .portfolio-box:nth-child(3n) {
 	margin-right: 0;
@@ -196,6 +194,7 @@ header {
 	margin-bottom: 0;
 }
 
+/*contactの部分*/
 .contact {
 	background-color: #FFF;
 	text-align: center;
@@ -249,4 +248,146 @@ footer {
 	size: 16px;
 	text-align: center;
 	line-height: 60px;
+}
+
+
+
+/*レスポンシブ*/
+@media screen and (min-width:768px) {
+	.sp {
+		display: none;
+	}
+}
+
+@media screen and (max-width:767px) {
+
+	* {
+		width: 100%;
+	}
+
+	/*res-headerの部分*/
+	header {
+		height: 50px;
+	}
+	.header-container {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+	.header-image {
+		background-size: cover;
+		height: 50px;
+		width: 100px;
+	}
+	.header-list, .header-text {
+		display: none;
+	}
+	.header-hamburger {
+		font-size: 50px;
+		line-height: 50px;
+		float: right;
+	/*	position: absolute;
+		top: 0;
+		left: 410px;*/
+		/*display: inline-block;*/
+	}
+
+
+
+	/*res-タイトル画像の部分*/
+	.main-visual {
+		background-image: url(img/code.png);
+	}
+	.main-visual-title {
+		padding-top: 250px;
+		font-size: 40px;
+	}
+	.main-visual-text {
+		margin-top: 10px;
+		font-size: 18px;
+	}
+
+	/*res-portfolioの部分*/
+	.portfolio-container, .feature-container, .profile-container, .contact-container {
+		/*width: 90%;*/
+		width: 100%;
+	}
+	.portfolio-box {
+		float: none;
+		margin: 0 auto 10px;
+	}
+	.portfolio-box:nth-child(3n) {
+		margin: 0 auto 10px;
+	}
+	.portfolio-box:nth-last-child(-n+3) {
+		margin: 0 auto 10px;
+	}
+	.portfolio-box:last-child {
+		margin: 0 auto 0;
+	}
+	.portfolio-box:nth-child(odd) {
+		display: none;
+	}
+
+	/*res-featureの部分*/
+	.feature-article {
+		float: none;
+		margin: 0 auto 10px;
+	}
+	.feature-article:last-child {
+		margin: 0 auto;
+	}
+	.feature-icon {
+		font-size: 60px;
+	}
+	.feature-article-title {
+		font-size: 20px;
+		color: #000000;
+		padding: 10px 0;
+	}
+	.feature-article-text {
+		text-align: left;
+		font-size: 16px;
+		color: #000000;
+	}
+
+	/*res-profileの部分*/
+	.profile-box {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	.profile-box-title {
+		margin: 20px auto 5px;
+	}
+	.profile-box-text {
+		margin-bottom: 0;
+	}
+	.profile-box-text:last-child {
+		margin-bottom: 0;
+	}
+
+	/*res-contactの部分*/
+	.contact-box {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	.contact-box-center {
+		width: 100%;
+	}
+	.contact-box-text:last-child {
+		margin-bottom: 20px;
+	}
+	.contact-box-icon {
+		float: none;
+		display: inline;
+	}
+	.contact-box-icon:last-child {
+		margin-right: 0;
+	}
+
+	/*res-footerの部分*/
+	/*レスポンシブなし*/
+
 }
