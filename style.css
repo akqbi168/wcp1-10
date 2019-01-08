@@ -214,12 +214,14 @@ header {
 	font-size: 20px;
 	margin-bottom: 5px;
 	text-align: left;
+	/*display: inline-block;*/
 	padding-left: 150px;
 }
 .contact-box-text {
 	font-size: 16px;
 	margin-bottom: 20px;
 	text-align: left;
+	/*display: inline-block;*/
 	padding-left: 150px;
 }
 .contact-box-sns {
@@ -243,13 +245,9 @@ footer {
 	height: 60px;
 	background-color: #EC715F;
 }
-
-
 .footer-text {
 	color: #FAFAFA;
 	size: 16px;
-/*	margin: 0 30px;
-	float: left;*/
 	text-align: center;
 	line-height: 60px;
 }
