@@ -208,35 +208,34 @@ header {
 .contact-box {
 	width: 400px;
 	float: left;
-	text-align: center;
+	text-align: left;
+}
+.contact-box-center {
+	width: 180px;
+	margin: 0 auto;
 }
 .contact-box-title {
 	font-size: 20px;
 	margin-bottom: 5px;
-	text-align: left;
-	/*display: inline-block;*/
-	padding-left: 150px;
+	/*text-align: left;*/
 }
 .contact-box-text {
 	font-size: 16px;
 	margin-bottom: 20px;
-	text-align: left;
-	/*display: inline-block;*/
-	padding-left: 150px;
+	/*text-align: left;*/
 }
-.contact-box-sns {
-	font-size: 20px;
-	margin-bottom: 5px;
-	text-align: left;
-	padding-left: 100px;
+.contact-box-text:last-child {
+	margin-bottom: 0;
+}
+.contact-box-social {
 }
 .contact-box-icon {
 	font-size: 50px;
-	text-align: left;
 	margin-right: 20px;
+	float: left;
 }
-.contact-box-icon:nth-child(1) {
-	margin-left: 100px;
+.contact-box-icon:last-child {
+	margin-right: 0;
 }
 
 /*footerの部分*/
